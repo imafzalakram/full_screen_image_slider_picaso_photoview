@@ -89,7 +89,6 @@ viewPager.setAdapter(adapter);
 ```
     <uses-permission android:name="android.permission.INTERNET" />
 
-
 ```
 
-And that's it &#128526
+And that's it :)
