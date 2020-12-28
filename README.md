@@ -71,11 +71,11 @@ you can find latest versions of picaso on [this](https://github.com/square/picas
 
 ```
 String[] imageUrls = new String[]{
-            "https://cdn.pixabay.com/photo/2016/11/11/23/34/cat-1817970_960_720.jpg",
-            "https://cdn.pixabay.com/photo/2017/12/21/12/26/glowworm-3031704_960_720.jpg",
-            "https://cdn.pixabay.com/photo/2017/12/24/09/09/road-3036620_960_720.jpg",
-            "https://cdn.pixabay.com/photo/2017/11/07/00/07/fantasy-2925250_960_720.jpg",
-            "https://cdn.pixabay.com/photo/2017/10/10/15/28/butterfly-2837589_960_720.jpg"
+      "https://cdn.pixabay.com/photo/2016/11/11/23/34/cat-1817970_960_720.jpg",
+      "https://cdn.pixabay.com/photo/2017/12/21/12/26/glowworm-3031704_960_720.jpg",
+      "https://cdn.pixabay.com/photo/2017/12/24/09/09/road-3036620_960_720.jpg",
+      "https://cdn.pixabay.com/photo/2017/11/07/00/07/fantasy-2925250_960_720.jpg",
+      "https://cdn.pixabay.com/photo/2017/10/10/15/28/butterfly-2837589_960_720.jpg"
     };
         
 ViewPager viewPager = findViewById(R.id.viewpager);
@@ -91,31 +91,5 @@ viewPager.setAdapter(adapter);
 
 
 ```
-### 6. Firebase Authenticaiton
-We are done with google sign-in, because we are using firebase that's why now we will authenticate for firebase as well. 
 
-```
- private void firebaseAuthWithGoogle(String idToken) {
-        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d("TAGsigninsuccess", "signInWithCredential:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            Toast.makeText(GoogleSignInOAuth.this, "Success", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(GoogleSignInOAuth.this, "Fail", Toast.LENGTH_SHORT).show();
-                            // If sign in fails, display a message to the user.
-                            Log.w("TAGsoigninfail", "signInWithCredential:failure", task.getException());
-                        }
-
-                    }
-                });
-    }
-```
-And that's it
-
-
+And that's it &#128526
