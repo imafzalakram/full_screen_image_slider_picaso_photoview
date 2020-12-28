@@ -5,7 +5,7 @@ In this project, i have merged [Picaso](https://github.com/square/picasso) &  [P
 
 
 
-### 1. Add dependencies into build.gradle (app module) 
+### 1.  Add dependencies into build.gradle (app module) 
 
 ```
 implementation 'androidx.annotation:annotation:1.1.0'
@@ -16,7 +16,7 @@ implementation 'com.github.chrisbanes:PhotoView:2.0.0'
 you can find latest versions of picaso on [this](https://github.com/square/picasso) &  [this](https://github.com/chrisbanes/PhotoView)
 
 
-### 2. Add this code into your xml file
+### 2.  Add this code into your xml file
 ```
    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
@@ -25,7 +25,7 @@ you can find latest versions of picaso on [this](https://github.com/square/picas
 ```
 
 
-### 3. Create a PagerAdapter to bind remote images 
+### 3.  Create a PagerAdapter to bind remote images 
 
 ```
 
@@ -67,7 +67,7 @@ you can find latest versions of picaso on [this](https://github.com/square/picas
     
 ```
 
-### 4. Add this code into your MainActivity
+### 4.  Add this code into your MainActivity
 
 ```
 String[] imageUrls = new String[]{
