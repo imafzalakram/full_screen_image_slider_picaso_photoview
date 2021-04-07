@@ -13,6 +13,23 @@ implementation 'com.squareup.picasso:picasso:2.71828'
 implementation 'com.github.chrisbanes:PhotoView:2.0.0'
 
 ```
+and add this code itno your project build.gradle file
+
+
+````
+allprojects {
+    repositories {
+        maven { url "https://www.jitpack.io" }
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url "https://www.jitpack.io" }
+    }	
+}
+
+````
 you can find latest versions of picaso on [this](https://github.com/square/picasso) &  [this](https://github.com/chrisbanes/PhotoView)
 
 
