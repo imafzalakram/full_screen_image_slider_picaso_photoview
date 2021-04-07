@@ -30,7 +30,7 @@ buildscript {
 }
 
 ````
-you can find latest versions of picaso on [this](https://github.com/square/picasso) &  [this](https://github.com/chrisbanes/PhotoView)
+you can find latest versions of picaso at [this](https://github.com/square/picasso) &  [this](https://github.com/chrisbanes/PhotoView)
 
 
 ### 2.  Add this code into your xml file
